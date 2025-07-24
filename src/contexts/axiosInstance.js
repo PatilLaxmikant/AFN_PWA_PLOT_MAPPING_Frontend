@@ -1,8 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL:"http://192.168.1.95:8000", // backend URL
-  // baseURL: "http://localhost:8000", // backend URL
+  baseURL: "https://5px2ad4c13.execute-api.ap-south-1.amazonaws.com/", // ← add trailing slash
 });
 
 instance.interceptors.request.use((config) => {
